@@ -1,8 +1,15 @@
 #include <windows.h>
+#include <iostream>
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 HINSTANCE g_hInst;
 LPCTSTR lpszClass = TEXT("First");
+
+int main()
+{
+	printf("Hello, World!\n");
+	return 0;
+}
 
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	LPSTR lpCmdLine, int nCmdShow)
